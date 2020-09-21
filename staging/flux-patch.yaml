@@ -16,5 +16,5 @@ spec:
       containers:
       - image: beopenit/cno-api:v0.0.0.1.0d78da0
         name: cno-api
-      imagePullSecrets:
-      - name: regcred
+        imagePullSecrets:
+        - name: regcred
