@@ -27,8 +27,6 @@ spec:
       labels:
         run: cno-api
     spec:
-      imagePullSecrets:
-      - name: regcred
       containers:
       - image: beopenit/cno-api:v0.0.0.1.0d78da0
         imagePullPolicy: Always
@@ -49,11 +47,14 @@ spec:
             secretKeyRef:
               name: cno-api-db-secret
               key: ROOT_PASSWORD
+      imagePullSecrets:
+      - name: regcred
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
+
 
 ---
 
