@@ -38,6 +38,8 @@ spec:
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
         env:
+        - name: IN_CLUSTER
+          value: true
         - name: DB_HOST
           value: cno-api-mysql-master
         - name: DB_USERNAME
