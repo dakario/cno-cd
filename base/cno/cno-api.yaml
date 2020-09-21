@@ -48,6 +48,10 @@ spec:
             secretKeyRef:
               name: cno-api-db-secret
               key: ROOT_PASSWORD
+        volumeMounts:
+        - name: kafka-cred
+          mountPath: "/root/.key"
+          readOnly: true
       imagePullSecrets:
       - name: regcred
       dnsPolicy: ClusterFirst
@@ -55,6 +59,11 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
+      volumes:
+      - name: kafka-cred
+        secret:
+          secretName: kafka-cred
+
 
 ---
 
