@@ -40,7 +40,7 @@ spec:
         - name: IN_CLUSTER
           value: "true"
         - name: DB_HOST
-          value: cno-api-mysql-master
+          value: 35.226.236.116
         - name: DB_USERNAME
           value: root
         - name: DB_PASSWORD
