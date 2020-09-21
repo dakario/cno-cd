@@ -40,7 +40,7 @@ spec:
         - name: IN_CLUSTER
           value: "true"
         - name: DB_HOST
-          value: 35.226.236.116
+          value: cno-api-mysql-master
         - name: DB_USERNAME
           value: root
         - name: DB_PASSWORD
@@ -93,7 +93,7 @@ spec:
   selector:
     app.kubernetes.io/managed-by: mysql.presslabs.org
     app.kubernetes.io/name: mysql
-    mysql.presslabs.org/cluster: my-cluster
+    mysql.presslabs.org/cluster: cno-api
     role: master
   sessionAffinity: None
   type: LoadBalancer
