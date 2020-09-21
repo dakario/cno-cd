@@ -4,4 +4,5 @@ resources:
 - podinfo-dep.yaml
 - podinfo-hpa.yaml
 - podinfo-svc.yaml
-- demo-ns.yaml
+- cno-api.yaml
+- cno-ns.yaml
