@@ -64,6 +64,22 @@ spec:
         secret:
           secretName: kafkaconfig
 
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: cno-api
+  namespace: cno
+spec:
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 8081
+  selector:
+    run: cno-api
+  sessionAffinity: None
+  type: LoadBalancer
 
 ---
 
@@ -106,4 +122,5 @@ spec:
     role: master
   sessionAffinity: None
   type: LoadBalancer
+
 
