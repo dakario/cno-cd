@@ -83,6 +83,32 @@ spec:
 
 ---
 
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+    nginx.ingress.kubernetes.io/proxy-body-size: "0"
+    nginx.ingress.kubernetes.io/proxy-read-timeout: "600"
+    nginx.ingress.kubernetes.io/proxy-send-timeout: "600"
+    nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+  name: cno-api
+  namespace: cno
+spec:
+  rules:
+  - host: cno-api.beopenit.com
+    http:
+      paths:
+      - backend:
+          serviceName: cno-api
+          servicePort: 80
+  tls:
+  - hosts:
+    - cno-api.beopenit.com
+    secretName: beopenit-cert
+
+---
+
 apiVersion: mysql.presslabs.org/v1alpha1
 kind: MysqlCluster
 metadata:
