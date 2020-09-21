@@ -1,4 +1,3 @@
-
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -39,7 +38,7 @@ spec:
         terminationMessagePolicy: File
         env:
         - name: IN_CLUSTER
-          value: true
+          value: "true"
         - name: DB_HOST
           value: cno-api-mysql-master
         - name: DB_USERNAME
@@ -56,7 +55,6 @@ spec:
       schedulerName: default-scheduler
       securityContext: {}
       terminationGracePeriodSeconds: 30
-
 
 ---
 
