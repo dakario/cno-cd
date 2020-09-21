@@ -8,7 +8,7 @@ metadata:
   labels:
     run: cno-api
   name: cno-api
-  namespace: api
+  namespace: cno
 spec:
   progressDeadlineSeconds: 600
   replicas: 1
