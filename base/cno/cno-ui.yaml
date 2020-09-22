@@ -48,7 +48,7 @@ spec:
         - name: OIDC_CLIENT_SECRET
           value: ""
       imagePullSecrets:
-      - name: regcred
+      - name: dockercred
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler

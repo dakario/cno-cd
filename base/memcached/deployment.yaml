@@ -21,7 +21,7 @@ spec:
         beta.kubernetes.io/os: linux      
       containers:
         - name: memcached
-          image: memcached:1.5.15
+          image: memcached:1.6.6
           imagePullPolicy: IfNotPresent
           args:
             - -m 512
