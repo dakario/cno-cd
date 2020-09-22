@@ -55,6 +55,9 @@ spec:
         resources: {}
         terminationMessagePath: /dev/termination-log
         terminationMessagePolicy: File
+        env:
+        - name: WATCH_NAMESPACE
+          value: ""
       imagePullSecrets:
       - name: regcred
       dnsPolicy: ClusterFirst
@@ -63,6 +66,3 @@ spec:
       securityContext: {}
       terminationGracePeriodSeconds: 30
       serviceAccountName: cno-operator
-      env:
-      - name: WATCH_NAMESPACE
-        value: ""
