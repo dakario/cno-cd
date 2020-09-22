@@ -27,11 +27,11 @@ metadata:
     fluxcd.io/tag.cno-ui: glob:v*.*.*
   name: cno-ui
   namespace: cno
+spec:
+  template:
     spec:
-      template:
-        spec:
-          $setElementOrder/containers:
-          - name: cno-ui
-          containers:
-          - image: beopenit/cno-ui:v0.0.0.63e104f
-            name: cno-ui
+      $setElementOrder/containers:
+      - name: cno-ui
+      containers:
+      - image: beopenit/cno-ui:v0.0.0.63e104f
+        name: cno-ui
