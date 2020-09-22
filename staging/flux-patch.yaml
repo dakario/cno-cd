@@ -5,7 +5,6 @@ metadata:
   annotations:
     flux.weave.works/tag.init: regexp:^3.*
     flux.weave.works/tag.podinfod: semver:~1.4
-    fluxcd.io/automated: null
     fluxcd.io/tag.cno-api: glob:v*.*.*
   name: cno-api
   namespace: cno
