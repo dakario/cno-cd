@@ -44,5 +44,5 @@ spec:
       $setElementOrder/containers:
       - name: cno-ui
       containers:
-      - image: beopenit/cno-ui:v0.0.0.7ef600d
+      - image: beopenit/cno-ui:v0.0.0.5a0fe80
         name: cno-ui
