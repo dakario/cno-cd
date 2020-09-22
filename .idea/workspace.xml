@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a782ee54-eace-4f59-a859-43aa474094be" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/base/cno/kustomization.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/base/cno/kustomization.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/base/cno/cno-operator.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/base/cno/cno-operator.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,16 +99,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/base/cno/cno-operator.yaml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+            <state relative-caret-position="116">
+              <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/base/cno/kustomization.yaml">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="45">
@@ -157,8 +157,8 @@
       <find>cno-api</find>
       <find>def</find>
       <find>defa</find>
-      <find>agent</find>
       <find>operator</find>
+      <find>agent</find>
     </findStrings>
     <replaceStrings>
       <replace>namespace: cno</replace>
@@ -198,8 +198,8 @@
         <option value="$PROJECT_DIR$/base/cno/cno-api.yaml" />
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/base/cno/cno-agent.yaml" />
-        <option value="$PROJECT_DIR$/base/cno/cno-operator.yaml" />
         <option value="$PROJECT_DIR$/base/cno/kustomization.yaml" />
+        <option value="$PROJECT_DIR$/base/cno/cno-operator.yaml" />
       </list>
     </option>
   </component>
@@ -287,7 +287,7 @@
     <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600794383520" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1600794477955" />
     <property name="go.gopath.indexing.explicitly.defined" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -329,12 +329,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600681874214</updated>
-      <workItem from="1600681877418" duration="39282000" />
+      <workItem from="1600681877418" duration="39376000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39282000" />
+    <option name="totallyTimeSpent" value="39376000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -573,17 +573,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/base/cno/cno-operator.yaml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/base/cno/kustomization.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="14" selection-start-line="3" selection-start-column="14" selection-end-line="3" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/base/cno/cno-operator.yaml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="29" column="21" lean-forward="true" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
         </state>
       </provider>
     </entry>

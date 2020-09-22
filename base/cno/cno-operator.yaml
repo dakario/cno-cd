@@ -27,8 +27,8 @@ metadata:
     deployment.kubernetes.io/revision: "3"
     fluxcd.io/automated: 'true'
   labels:
-    run: cno-agent
-  name: cno-agent
+    run: cno-operator
+  name: cno-operator
   namespace: cno
 spec:
   progressDeadlineSeconds: 600
