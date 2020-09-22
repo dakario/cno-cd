@@ -61,6 +61,11 @@ spec:
         env:
         - name: IN_CLUSTER
           value: "true"
+        - name: LICENCE
+          valueFrom:
+            secretKeyRef:
+              name: cno-agent-config
+              key: licence
         volumeMounts:
         - name: kafkaconfig
           mountPath: "/root/.key"
@@ -76,4 +81,4 @@ spec:
       volumes:
       - name: kafkaconfig
         secret:
-          secretName: kafkaconfig
+          secretName: cno-agent-config
