@@ -59,7 +59,9 @@ spec:
         - name: WATCH_NAMESPACE
           value: ""
         - name: POD_NAME
-          value: cno-operator
+          valueFrom:
+            fieldRef:
+              fieldPath: metadata.name
       imagePullSecrets:
       - name: regcred
       dnsPolicy: ClusterFirst
