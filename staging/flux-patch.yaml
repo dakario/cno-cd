@@ -17,7 +17,9 @@ spec:
       containers:
       - image: beopenit/cno-api:v0.0.0.1.e77ed99
         name: cno-api
+
 ---
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -25,3 +27,11 @@ metadata:
     fluxcd.io/tag.cno-ui: glob:v*.*.*
   name: cno-ui
   namespace: cno
+    spec:
+      template:
+        spec:
+          $setElementOrder/containers:
+          - name: cno-ui
+          containers:
+          - image: beopenit/cno-ui:v0.0.0.63e104f
+            name: cno-ui
