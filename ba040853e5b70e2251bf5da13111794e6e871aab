@@ -1,0 +1,1 @@
+{"jobID":"b8bf791f-401f-d2b3-abad-6fdd14468be9","spec":{"type":"policy","cause":{"Message":"","User":"Mody Sow \u003cmody.sow@beopenit.com\u003e"},"spec":{"cno:deployment/cno-api":{"add":{},"remove":{"automated":"true"}}}},"result":null}
