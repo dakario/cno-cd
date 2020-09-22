@@ -17,3 +17,15 @@ spec:
             - --git-branch=master
             - --git-path=staging
             - --git-url=git@github.com:dakario/cno-cd.git
+            - --docker-config=/dockercfg/config.json
+          volumeMounts:
+          - name: dockercfg
+            mountPath: "/dockercfg"
+            readOnly: true
+      volumes:
+      - name: dockercfg
+        secret:
+          secretName: regcred
+          items:
+          - key: .dockerconfigjson
+            path: config.json
