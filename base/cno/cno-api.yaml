@@ -55,7 +55,7 @@ spec:
           mountPath: "/root/.key"
           readOnly: true
       imagePullSecrets:
-      - name: dockercredentials
+      - name: regdockercred
       dnsPolicy: ClusterFirst
       restartPolicy: Always
       schedulerName: default-scheduler
