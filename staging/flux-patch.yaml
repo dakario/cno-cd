@@ -28,7 +28,7 @@ spec:
       $setElementOrder/containers:
       - name: cno-api
       containers:
-      - image: beopenit/cno-api:v0.0.0.1.ed6f2fa
+      - image: beopenit/cno-api:v0.0.0.1.84d3c51
         name: cno-api
 ---
 apiVersion: apps/v1
