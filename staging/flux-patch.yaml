@@ -34,6 +34,20 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  name: cno-operator
+  namespace: cno
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: cno-operator
+      containers:
+      - image: beopenit/onboarding-operator-kubernetes:v0.0.2
+        name: cno-operator
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
   annotations:
     fluxcd.io/tag.cno-ui: glob:v*.*.*
   name: cno-ui
