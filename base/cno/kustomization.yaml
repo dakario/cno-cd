@@ -2,7 +2,7 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
 - cno-operator.yaml
-
+- cno-agent.yaml
 - cno-api.yaml
 - cno-ui.yaml
 - cno-ns.yaml
