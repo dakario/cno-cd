@@ -10,7 +10,7 @@ spec:
       $setElementOrder/containers:
       - name: cno-agent
       containers:
-      - image: beopenit/cno-agent:v0.0.0.4a0223f
+      - image: beopenit/cno-agent:v0.0.0.d32a8f3
         name: cno-agent
 ---
 apiVersion: apps/v1
@@ -28,8 +28,22 @@ spec:
       $setElementOrder/containers:
       - name: cno-api
       containers:
-      - image: beopenit/cno-api:v0.0.0.1.ed6f2fa
+      - image: beopenit/cno-api:v0.0.0.1.5d2973a
         name: cno-api
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: cno-operator
+  namespace: cno
+spec:
+  template:
+    spec:
+      $setElementOrder/containers:
+      - name: cno-operator
+      containers:
+      - image: beopenit/onboarding-operator-kubernetes:v0.0.2
+        name: cno-operator
 ---
 apiVersion: apps/v1
 kind: Deployment
@@ -44,5 +58,5 @@ spec:
       $setElementOrder/containers:
       - name: cno-ui
       containers:
-      - image: beopenit/cno-ui:v0.0.0.5a0fe80
+      - image: beopenit/cno-ui:v0.0.0.a03f6d0
         name: cno-ui
