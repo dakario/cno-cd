@@ -10,7 +10,7 @@ spec:
       $setElementOrder/containers:
       - name: cno-agent
       containers:
-      - image: beopenit/cno-agent:v0.0.0.7893749
+      - image: beopenit/cno-agent:v0.0.0.3e34849
         name: cno-agent
 ---
 apiVersion: apps/v1
